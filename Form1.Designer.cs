@@ -32,6 +32,7 @@
             txtID = new TextBox();
             txtPW = new TextBox();
             btnLogin = new Button();
+            lblErrorMsg = new Label();
             SuspendLayout();
             // 
             // lblAppName
@@ -48,7 +49,7 @@
             // 
             txtID.Font = new Font("서울한강 장체 L", 27.7499962F);
             txtID.ForeColor = SystemColors.ScrollBar;
-            txtID.Location = new Point(40, 121);
+            txtID.Location = new Point(40, 109);
             txtID.Name = "txtID";
             txtID.Size = new Size(493, 51);
             txtID.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             txtPW.Font = new Font("서울한강 장체 L", 27.7499962F);
             txtPW.ForeColor = SystemColors.ScrollBar;
-            txtPW.Location = new Point(40, 194);
+            txtPW.Location = new Point(40, 181);
             txtPW.Name = "txtPW";
             txtPW.Size = new Size(493, 51);
             txtPW.TabIndex = 2;
@@ -73,7 +74,7 @@
             btnLogin.BackColor = SystemColors.ActiveCaption;
             btnLogin.Font = new Font("서울남산체 M", 27.7499962F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnLogin.ForeColor = SystemColors.ButtonFace;
-            btnLogin.Location = new Point(204, 272);
+            btnLogin.Location = new Point(204, 244);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(173, 64);
             btnLogin.TabIndex = 3;
@@ -81,11 +82,24 @@
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
+            // lblErrorMsg
+            // 
+            lblErrorMsg.AutoSize = true;
+            lblErrorMsg.Font = new Font("서울남산 장체 M", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Location = new Point(154, 325);
+            lblErrorMsg.Name = "lblErrorMsg";
+            lblErrorMsg.Size = new Size(269, 19);
+            lblErrorMsg.TabIndex = 4;
+            lblErrorMsg.Text = "아이디 또는 비밀번호가 잘못 되었습니다.";
+            lblErrorMsg.Visible = false;
+            // 
             // LoginMainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(574, 371);
+            Controls.Add(lblErrorMsg);
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
             Controls.Add(txtID);
@@ -102,5 +116,6 @@
         private TextBox txtID;
         private TextBox txtPW;
         private Button btnLogin;
+        private Label lblErrorMsg;
     }
 }
