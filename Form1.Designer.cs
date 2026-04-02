@@ -55,6 +55,7 @@
             txtID.TabIndex = 1;
             txtID.Text = "아이디";
             txtID.Enter += txtID_Enter;
+            txtID.KeyDown += txtID_KeyDown;
             txtID.Leave += txtID_Leave;
             // 
             // txtPW
@@ -67,6 +68,7 @@
             txtPW.TabIndex = 2;
             txtPW.Text = "비밀번호";
             txtPW.Enter += txtPW_Enter;
+            txtPW.KeyDown += txtPW_KeyDown;
             txtPW.Leave += txtPW_Leave;
             // 
             // btnLogin

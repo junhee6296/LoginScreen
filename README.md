@@ -13,6 +13,9 @@
   - IsNullOrWhiteSpace을 이용한 텍스트박스 공백 체크
   - ForeColor로 텍스트박스 안 글자 색 바꾸기
   - UseSystemPasswordChar 기능을 통해 비밀번호 가리기 기능 구현
+  - Visible 기능을 통해 특정 라벨을 켜고 끄는 기능을 구현
+  - Keycode를 이용한 키바인딩 추가
+  - PerformClick을 키바인딩에 연결하여 버튼 편의성 강화
 
 
 ## 실행 화면 (과제1)
@@ -46,16 +49,19 @@
 - 구현 내용과 기능 설명
     - 기존 로그인 실패 Messagebox 제거
     - lblErrorMsg.Visible의 true/false 여부로 로그인 오류 상태 출력
-    
+
 - ## 실행 화면 (과제3)
 - 과제3 코드의 실행 스크린샷
 
 ![과제3 실행화면](img/step3.png)
 
 - 과제 내용
-
+    - 아이디 입력란 엔터 > 비밀번호로 이동
+    - 비밀번호 입력란 엔터 > 로그인 버튼 누른 효과
 - 구현 내용과 기능 설명
-
+    - KeyCode Enter 입력 시 커서 클릭 필요 없이 다음 단계로 이동함
+    - 아이디에서 Enter > 비밀번호 입력란으로 커서 이동 (focus)
+    - 비밀번호에서 Enter > PerformClick으로 버튼 클릭 효과!
 
 - ## 실행 화면 (과제4)
 - 과제4 코드의 실행 스크린샷
