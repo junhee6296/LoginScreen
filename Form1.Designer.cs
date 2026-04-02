@@ -79,6 +79,7 @@
             btnLogin.TabIndex = 3;
             btnLogin.Text = "로그인";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // LoginMainForm
             // 

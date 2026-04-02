@@ -7,6 +7,24 @@ namespace LoginScreen
             InitializeComponent();
         }
 
+        string myID = "junhee"; 
+        string myPW = "6296";
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string inputID = txtID.Text; 
+            string inputPW = txtPW.Text;
+
+            if (inputID == myID && inputPW == myPW)
+            {
+                MessageBox.Show("로그인 성공!");
+            }
+            else
+            {
+                MessageBox.Show("로그인 실패!");
+            }
+        }
+
         // 아이디 가이드텍스트 on/off
         private void txtID_Enter(object sender, EventArgs e)
         {
