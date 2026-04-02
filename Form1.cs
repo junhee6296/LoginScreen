@@ -7,8 +7,8 @@ namespace LoginScreen
             InitializeComponent();
         }
 
-        string myID = "junhee"; 
-        string myPW = "6296";
+        string myID = "admin"; 
+        string myPW = "superman";
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
